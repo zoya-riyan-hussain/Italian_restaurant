@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia - Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-brand">
+        <i class="fas fa-utensils"></i>
+        <span>Bella Italia</span>
+    </div>
+    <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#reservation" class="nav-link">Reservations</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li id="authLinks">
+            <a href="#login" class="nav-link btn-login">Login</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Main Content Container -->
+<main id="app"></main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Bella Italia</h3>
+            <p>Authentic Italian cuisine since 1985</p>
+        </div>
+        <div class="footer-section">
+            <h3>Hours</h3>
+            <p>Mon-Thu: 11am - 10pm</p>
+            <p>Fri-Sat: 11am - 11pm</p>
+            <p>Sun: 12pm - 9pm</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Pasta Lane, NYC</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bella Italia. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
