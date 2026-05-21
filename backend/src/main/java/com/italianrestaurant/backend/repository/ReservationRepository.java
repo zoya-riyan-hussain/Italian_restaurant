@@ -1,0 +1,15 @@
+package com.italianrestaurant.backend.repository;
+
+import com.italianrestaurant.backend.entity.Reservation;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Repository
+public interface ReservationRepository extends JpaRepository<Reservation, Long> {
+    List<Reservation> findByUserId(Long userId);
+    List<Reservation> findByReservationDate(LocalDate date);
+    List<Reservation> findByStatus(Reservation.Status status);
+}
